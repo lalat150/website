@@ -1,0 +1,161 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device=width, initial-scale=1.0">
+    <title>BEGIN AGAIN</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            box-sizing: border-box;
+        }
+
+        body {
+            line-height: 1.6;
+            color: #fff;
+            background: #111;
+            overflow-x: hidden;
+        }
+
+        header {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('sederhana.jpeg');
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+        }
+
+        .main {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            padding: 20px;
+            position: absolute;
+            top: 0;
+        }
+
+        .logo img {
+            width: 125px;
+            height: auto;
+        }
+
+        ul {
+            list-style-type: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: #fff;
+            padding: 10px 20px;
+            border: 2px solid #fff;
+            border-radius: 25px;
+            transition: background 0.3s, color 0.35s;
+        }
+
+        ul li a:hover {
+            background-color: #ffd700;
+            color: #000;
+            border-color: #ffd700;
+        }
+
+        .title h1 {
+            font-size: 80px;
+            color: #fff;
+            text-shadow: 2px 2px 8px #000, 0 0 10px #ff7e5f, 0 0 20px #feb47b;
+            margin: 0 auto;
+        }
+
+        .title {
+            margin-top: 80px;
+        }
+
+        .button a {
+            display: inline-block;
+            background-color: #ff7e5f;
+            padding: 15px 40px;
+            color: #fff;
+            font-size: 18px;
+            text-decoration: none;
+            border-radius: 50px;
+            margin-top: 20px;
+            transition: all 0.3s ease-in-out;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .button a:hover {
+            background-color: #feb47b;
+            transform: scale(1.1);
+            box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #333;
+            color: #fff;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        @media (max-width: 768px) {
+            ul {
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+            }
+
+            ul li a {
+                padding: 8px 15px;
+            }
+
+            .title h1 {
+                font-size: 40px;
+            }
+
+            .button a {
+                padding: 10px 30px;
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="main">
+            <div class="logo">
+                <img src="logo.png" alt="LOGO">
+            </div>
+            <ul>
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="biodata.html">BIODATA</a></li>
+                <li><a href="education.html">EDUCATION</a></li>
+                <li><a href="experience.html">EXPERIENCE</a></li>
+                <li><a href="resume.html">RESUME</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+        <div class="title">
+            <h1>GET TO KNOW ME</h1>
+        </div>
+        <div class="button">
+            <a href="biodata.html">Start Anywhere</a>
+        </div>
+    </header>
+    <footer>
+        <p>&copy; 2024. My Personal Website</p>
+    </footer>
+</body>
+</html>

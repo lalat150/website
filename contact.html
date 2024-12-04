@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: url('besar.jpeg') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+            padding: 0;
+            margin: 0;
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            text-align: center;
+            font-size: 2.5rem;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            transition: text-shadow 0.3s ease-in-out;
+        }
+
+        header:hover {
+            text-shadow: 3px 3px 6px rgba(255, 215, 0, 0.8);
+        }
+
+        nav {
+            background-color: rgba(0, 0, 0, 0.8);
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: inline-block;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: #ffd700;
+            text-decoration: none;
+            font-size: 1.2rem;
+            padding: 8px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        nav ul li a,
+        nav ul li a:hover {
+            background-color: #333;
+            transform: scale(1.1);
+        }
+
+        main {
+            max-width: 1000px;
+            margin: 50px auto;
+            background-color: rgba(0, 0, 0, 0.6); 
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            opacity: 0;
+            animation: fadeIn 1s forwards;
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
+
+        main h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        main h2 span {
+            color: #ffd700;
+        }
+
+        table {
+            width: 100%;
+            margin-top: 30px;
+            border-collapse: collapse;
+            opacity: 0;
+            animation: slideUp 1s 0.5s forwards;
+        }
+
+        @keyframes slideUp {
+            from {
+                transform: translateY(20px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        table th, table td {
+            padding: 25px;
+            text-align: left;
+            font-size: 1.2rem;
+            border-bottom: 1px solid #ddd;
+        }
+
+        table th {
+            background-color: #444;
+            color: #ffd700;
+        }
+
+        table td {
+            background-color: #333;
+            color: #fff;
+        }
+
+        table td a {
+            color: #ffd700;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        table td a:hover {
+            color: #fff;
+            text-decoration: underline;
+        }
+
+        .contact-btn {
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            background-color: #ffd700;
+            color: #333;
+            font-size: 1.5rem;
+            padding: 15px 25px;
+            border-radius: 50%;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .contact-btn:hover {
+            background-color: #333;
+            color: #ffd700;
+            transform: scale(1.1);
+        }
+
+        .qr-container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .qr-container img {
+            width: 250px;
+            height: 250px;
+            border-radius: 10px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease;
+        }
+
+        .qr-container img:hover {
+            transform: scale(1.1);
+        }
+
+        @media (max-width: 768px) {
+            main {
+                padding: 20px;
+            }
+
+            table th, table td {
+                font-size: 1rem;
+            }
+
+            nav ul li {
+                display: block;
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+
+            nav ul li a {
+                font-size: 1.1rem;
+                padding: 10px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    Contact Me
+</header>
+
+<nav>
+    <ul>
+        <li><a href="home.html">HOME</a></li>
+        <li><a href="biodata.html">BIODATA</a></li>
+        <li><a href="education.html">EDUCATION</a></li>
+        <li><a href="experience.html">EXPERIENCE</a></li>
+        <li><a href="resume.html">RESUME</a></li>
+        <li><a href="contact.html" class="active">CONTACT</a></li>
+    </ul>
+</nav>
+
+<main>
+    <h2>Let's <span>Connect</span></h2>
+    <p>If you have any questions, you can reach me using the contact information below:</p>
+
+    <table>
+        <tr>
+            <th>Contact Method</th>
+            <th>Details</th>
+        </tr>
+        <tr>
+            <td><strong>Phone</strong></td>
+            <td>013-3371335</td>
+        </tr>
+        <tr>
+            <td><strong>Email</strong></td>
+            <td>Linelaura1335@hotmail.com</td>
+        </tr>
+        <tr>
+            <td><strong>Instagram</strong></td>
+            <td><a href="https://www.instagram.com/didekoo3/profilecard/?igsh=MW9ta2preTcwMmx3dg==" target="_blank">@didekoo3</a></td>
+        </tr>
+    </table>
+
+    <div class="qr-container">
+   
+        <a href="https://wa.me/qr/EAUGN4QCB7MFL1" target="_blank">
+            <img src="what.jpeg" alt="Scan to WhatsApp" />
+        </a>
+
+        <a href="https://www.instagram.com/didekoo3/profilecard/?igsh=MW9ta2preTcwMmx3dg==" target="_blank">
+            <img src="ig.jpeg" alt="Scan to Instagram" />
+        </a>
+    </div>
+</main>
+
+<div class="contact-btn">
+    <a href="mailto:Linelaura1335@hotmail.com">📧</a>
+</div>
+
+</body>
+</html>

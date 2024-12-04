@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Education Journey</title>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Playfair+Display&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Merriweather', serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            background: linear-gradient(135deg, #333, #555);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+        }
+
+        nav {
+            position: sticky;
+            top: 0;
+            background: #333;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+            z-index: 100;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 10px 0;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: 500;
+            padding: 8px 12px;
+            border-radius: 20px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            display: inline-block;
+        }
+
+        nav ul li a.active, nav ul li a:hover {
+            background-color: #ffd700;
+            color: #333;
+        }
+
+        .section {
+            padding: 50px 20px;
+            text-align: center;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 20px auto;
+            border-radius: 10px;
+        }
+
+        .section h2 {
+            font-size: 2.5rem;
+            color: #555;
+        }
+
+        .section p {
+            font-size: 1rem;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .gallery {
+            position: relative;
+            width: auto;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .gallery img {
+            width: 600px;
+            height: 500px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            display: block;
+        }
+
+        .gallery .slider {
+            display: flex;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            gap: 10px;
+            scrollbar-width: thin;
+        }
+
+        .gallery .slider img {
+            scroll-snap-align: start;
+            flex-shrink: 0;
+            width: 400px;
+            max-width: 300px;
+            height: 300px;
+        }
+
+        .gallery::-webkit-scrollbar {
+            height: 8px;
+        }
+
+        .gallery::-webkit-scrollbar-thumb {
+            background-color: #ccc;
+            border-radius: 5px;
+        }
+
+        .gallery::-webkit-scrollbar-track {
+            background-color: #f1f1f1;
+        }
+
+        #primary { 
+            background: linear-gradient(135deg, #f0f7f4, #c5e1d3); 
+        }
+
+        #highschool { 
+            background: linear-gradient(135deg, #fce2d2, #f7d8b9); 
+        }
+
+        #diploma { 
+            background: linear-gradient(135deg, #d1e0f7, #a6c6f1); 
+        }
+
+        @media (max-width: 768px) {
+            .gallery .slider img {
+                max-width: 200px;
+            }
+
+            .section {
+                padding: 50px 50px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>My Education Journey</h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="home.html">HOME</a></li>
+        <li><a href="biodata.html">BIODATA</a></li>
+        <li><a href="education.html" class="active">EDUCATION</a></li>
+        <li><a href="experience.html">EXPERIENCE</a></li>
+        <li><a href="resume.html">RESUME</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+    </ul>
+</nav>
+
+<section class="section" id="primary">
+    <h2>Primary School</h2>
+    <p>Sekolah Rendah Kebangsaan Sungai Buloh - The foundation of my educational journey. I started learning the basics of subjects here.</p>
+    <div class="gallery">
+        <div class="slider">
+            <img src="sk.jpeg" alt="Primary School 1">
+            <img src="1sk.jpeg" alt="Primary School 2">
+            <img src="2sk.jpeg" alt="Primary School 3">
+            <img src="3sk.jpeg" alt="Primary School 4">
+            <img src="4sk.jpeg" alt="Primary School 5">
+        </div>
+    </div>
+</section>
+
+<section class="section" id="highschool">
+    <h2>High School</h2>
+    <p>Sekolah Menengah Kebangsaan Luar Bandar No 1 Sibu - This is where I grew academically, participated in extracurricular activities, and made lifelong friends.</p>
+    <div class="gallery">
+        <div class="slider">
+            <img src="smk.JPG" alt="High School 1">
+            <img src="spm%20result.jpeg" alt="High School 1">
+            <img src="1smk.jpeg" alt="High School 2">
+            <img src="2smk.jpeg" alt="High School 3">
+            <img src="3smk.jpeg" alt="High School 4">
+            <img src="4smk.jpeg" alt="High School 5">
+        </div>
+    </div>
+</section>
+
+<section class="section" id="diploma">
+    <h2>Diploma</h2>
+    <p>Universiti Teknologi Mara Cawangan Sarawak Kampus Samarahan - I furthered my studies here, gaining deeper knowledge and skills for my future career in Information Management.</p>
+    <div class="gallery">
+        <div class="slider">
+            <img src="uni.jpeg" alt="Diploma 1">
+            <img src="1uni.jpeg" alt="Diploma 2">
+            <img src="2uni.jpeg" alt="Diploma 3">
+            <img src="3uni.jpeg" alt="Diploma 4">
+            <img src="4uni.jpeg" alt="Diploma 5">
+           
+        </div>
+    </div>
+</section>
+
+</body>
+</html>
+

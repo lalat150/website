@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biodata</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Lobster&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #fdfcfb, #e2d1c3);
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        header {
+            background: linear-gradient(135deg, #f6d365, #fda085);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+            clip-path: ellipse(150% 80% at 50% 20%);
+            position: relative;
+        }
+
+        header h1 {
+            font-family: 'Lobster', cursive;
+            font-size: 4rem;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 2.5rem;
+            margin: 10px 0 0;
+        }
+
+        nav {
+            position: sticky;
+            top: 0;
+            background: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            z-index: 100;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            padding: 15px 0;
+            margin: 0;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #555;
+            font-weight: 500;
+            margin: 0 15px;
+            padding: 8px 12px;
+            border-radius: 20px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background: #fda085;
+            color: white;
+        }
+
+        main {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+        }
+
+        .personal-info {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            background: white;
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .personal-info img {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            object-fit: cover;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .personal-info div {
+            flex: 1;
+        }
+
+        .personal-info h2 {
+            color: #fda085;
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+        }
+
+        .personal-info p {
+            margin: 5px 0;
+        }
+
+        .hobbies {
+            background: linear-gradient(to right, #84fab0, #8fd3f4);
+            padding: 30px;
+            border-radius: 1.5rem;
+            color: white;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .hobbies h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .hobbies-grid {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .hobbies-grid div {
+            text-align: center;
+        }
+
+        .hobbies-grid img {
+            width: 300px;
+            height: 400px;
+            border-radius: 15px;
+            object-fit: cover;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .milestones {
+            background: linear-gradient(135deg, #ffe4c4, #ffcba4);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            color: #333;
+        }
+
+        .milestones h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2rem;
+            color: #fda085;
+        }
+
+        .timeline {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .event {
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .event h3 {
+            font-size: 2rem;
+            color: #fda085;
+            margin-bottom: 10px;
+        }
+
+        .event p {
+            font-size: 1.5rem;
+            color: #555;
+        }
+        
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #ffc107;
+            padding: 15px;
+            border-radius: 50%;
+            text-align: center;
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .fab a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Hi, I am Lauraline</h1>
+        <p>Welcome to personal space!</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="home.html">HOME</a></li>
+            <li><a href="biodata.html" class="active">BIODATA</a></li>
+            <li><a href="education.html">EDUCATION</a></li>
+            <li><a href="experience.html">EXPERIENCE</a></li>
+            <li><a href="resume.html">RESUME</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="personal-info">
+            <img src="me.jpeg" alt="Profile Picture">
+            <div>
+                <h2>Biodata Information</h2>
+                <p><strong>Name:</strong> Lauraline Anak Suning</p>
+                <p><strong>Age:</strong> 20</p>
+                <p><strong>Date of Birth:</strong> 17 April 2004</p>
+                <p><strong>Place of Birth:</strong> Hospital Sibu</p>
+                <p><strong>Height:</strong> 147cm</p>
+                <p><strong>Languages:</strong> English, Malay, Iban</p>
+                <p><strong>Favorite Quote:</strong> "If you are afraid of failure, you do not deserve to be successful."</p>
+            </div>
+        </section>
+
+        <section class="hobbies">
+            <h2>My Hobbies</h2>
+            <div class="hobbies-grid">
+                <div>
+                    <img src="read.jpeg" alt="Reading">
+                    <p>Reading</p>
+                </div>
+                <div>
+                    <img src="drama.jpeg" alt="Watching Dramas">
+                    <p>Watching Dramas</p>
+                </div>
+                <div>
+                    <img src="playlist.jpeg" alt="Music">
+                    <p>Exploring Music</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="milestones">
+            <h2>My Journey</h2>
+            <div class="timeline">
+                <div class="event">
+                    <h3>🎉 2004</h3>
+                    <p>Born in Hospital Sibu, Sarawak.</p>
+                </div>
+                <div class="event">
+                    <h3>📚 2010</h3>
+                    <p>Started elementary school in Selangau.</p>
+                </div>
+                <div class="event">
+                    <h3>📚 2017</h3>
+                    <p>Began secondary school in Sibu.</p>
+                </div>
+                <div class="event">
+                    <h3>🎓 2022</h3>
+                    <p>Continue Diploma in Information Management at UiTM.</p>
+                </div>
+                <div class="event">
+                    <h3>💡 2024</h3>
+                    <p>Completed internship at Pustaka Negeri Sarawak, State Record Repository.</p>
+                </div>
+            </div>
+            <div class="fab">
+        <a href="contact.html">Contact Me</a>
+            </div>
+        </section>
+    </main>
+</body>
+</html> 
